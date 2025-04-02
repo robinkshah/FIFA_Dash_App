@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1_g82J-EbqJoZd_1UWNTA-rrkmb78Wg7M
 """
 
-# app.py
-
 import pandas as pd
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output
@@ -103,4 +101,6 @@ def update_year_result(year):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host='0.0.0.0', port=port, debug=True)
