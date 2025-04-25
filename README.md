@@ -18,3 +18,4 @@ Link: https://fifa-dash-app-x23i.onrender.com/
 - Interactive table showing all FIFA World Cup finals since 1930
 
 ---
+Project made for CP321
